@@ -1,4 +1,4 @@
-main{
+main, #hero{
     text-align: center;
 }
 body{
@@ -10,18 +10,52 @@ body{
 /* Header & Hero */
 
 /* Projects */
-
+#professional{
+    padding: 10px;
+    background-color: rgb(0, 153, 255);
+    border-radius: 7px;
+    max-width: 200px;
+    max-height: 100%;
+}
+.description, #ctag{
+    background-color: rgb(0, 153, 255);
+    border-radius: 7px;
+    border-width: auto;
+}
+#email{
+    background-color: rgb(0, 153, 255);
+    border: 0%;
+    border-radius: 7px;
+    margin: 0;
+    padding: 5%;
+}
 /* Reviews */
 
 /* Footer */
+footer {
+    /* margin: -10px; */
+    border: none;
+    position: relative;
+    background-color: black;
+    color:white;
+    text-decoration-color: #ffff;
+    
+}
 
 
 /* Media state for Desktop site */
 @media (min-width: 1000px) {
 
     /* Header & Hero */
-
+    
     /* Projects */
+    #professional{
+        justify-content: space-between; /*from w3schools https://www.w3schools.com/css/css3_image_center.asp*/
+    }
+    #projects{
+        display:flex;
+
+    }
 
     /* Reviews */
 
