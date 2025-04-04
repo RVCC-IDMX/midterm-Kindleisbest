@@ -17,13 +17,15 @@ body {
 
 
 /* Projects */
-.professional, .review, #pfp{
+.professional, .review{
     padding: 10px;
     background-color: rgb(0, 153, 255);
     border-radius: 7px;
     max-width: 200px;
     max-height: 100%;
 }
+
+
 .project img {
     max-width:100%;
     max-width: 200px;
@@ -48,7 +50,9 @@ main{
     padding: 0;
 }
 /* Reviews */
-
+.reviews{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
 /* Footer */
 footer {
     border: none;
@@ -64,6 +68,10 @@ footer h4 {
     max-width: fit-content;
     max-height: auto;
 }
+.rtext{
+    margin: 0;
+    padding: 0;
+}
 
 /* Media state for Desktop site */
 @media (min-width: 1000px) {
@@ -72,10 +80,7 @@ footer h4 {
    
     
     /* Projects */
-    /*
-    .professional{
-        justify-content: space-between; /*from w3schools https://www.w3schools.com/css/css3_image_center.asp* /
-    }*/
+   
     #projects{
         display:grid;
         grid-template-columns:1fr 1fr 1fr 1fr;
@@ -89,7 +94,13 @@ footer h4 {
     }
 
     /* Reviews */
-
+    .pfp{
+        max-width: 100px;
+        max-height: 100%;
+        border-radius: 50%;
+        
+    }
+ 
     /* Footer */
 
 }
