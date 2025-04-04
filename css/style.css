@@ -17,18 +17,26 @@ body {
 
 
 /* Projects */
-.professional, .review{
+.professional{
     padding: 10px;
     background-color: rgb(0, 153, 255);
     border-radius: 7px;
     max-width: 200px;
     max-height: 100%;
 }
+.review{
+    padding: 10px;
+    background-color: rgb(0, 153, 255);
+    border-radius: 7px;
+    max-width: 100px;
+    max-height: 100%;
+
+}
 
 
 .project img {
     max-width:100%;
-    max-width: 200px;
+    max-width: 100px;
     max-height: 100%;
 }
 .description, #ctag{
@@ -50,9 +58,7 @@ main{
     padding: 0;
 }
 /* Reviews */
-.reviews{
-    grid-template-columns:1fr 1fr 1fr 1fr;
-}
+
 .pfp{
     max-width: 100px;
     max-height: 100%;
@@ -100,7 +106,13 @@ footer h4 {
     }
 
     /* Reviews */
-    
+   .review{
+    padding: 10px;
+    background-color: rgb(0, 153, 255);
+    border-radius: 7px;
+    max-width: 500px;
+    max-height: 100%;
+   }
  
     /* Footer */
 
