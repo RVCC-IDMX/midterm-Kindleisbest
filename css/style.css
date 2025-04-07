@@ -1,53 +1,63 @@
-main, #hero, footer, header{
+main,
+#hero,
+footer,
+header {
     text-align: center;
 }
+
 body {
     background-color: blue;
     padding-top: 0%;
     padding: 0%;
-    margin:0;
+    margin: 0;
 }
 
 /* Styles for Mobile Site */
-@media (max-width: 999.99px){
-    #projects{
-        display:grid;
-        grid-template-rows:1fr 1fr 1fr 1fr;
+@media (max-width: 999.99px) {
+    #projects {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width:100%;
     }
+
     #projects img {
-        max-width:80%;
+        max-width:100%;
         padding: 10px;
         border-radius: 7px;
         background-color: rgb(0, 153, 255);
         margin-top: 5%;
     }
+
     .project {
-        /*justify-items:stretch;
-        display:grid;*/
+        justify-items:stretch;
+        display:grid;
     }
-    .description{
+
+    .description {
         background-color: rgb(0, 153, 255);
         border-radius: 7px;
         max-width: 50%;
         margin-top: 3%;
         margin-left: 25%;
     }
-    .review{
+
+    .review {
         padding: 10px;
         background-color: rgb(0, 153, 255);
         border-radius: 7px;
         max-width: 225px;
         max-height: 100%;
-        
-    
+
+
         margin: auto;
         width: 50%;
         /*past 2 lines from w3 schools https://www.w3schools.com/css/css_align.asp*/
 
     }
-    #boxes{
-        display:flex;
-        flex-template-rows:1fr 1fr 1fr 1fr;
+
+    #boxes {
+        display: flex;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -68,60 +78,66 @@ body {
 
 
 .project img {
-    max-width:100%;
+    /*
+    max-width: 100%;
     max-width: 100px;
-    max-height: 100%;
+    max-height: 100%;*/
 }
 
-#email{
+#email {
     background-color: rgb(0, 153, 255);
     border: 0%;
     border-radius: 7px;
     margin: 0;
-    width:200px;
-    height:50px;
-    max-width:100%;
+    width: 200px;
+    height: 50px;
+    max-width: 100%;
     text-decoration-color: black;
     font-weight: bold;
     font-size: 15px;
 }
-main{
+
+main {
     margin: 0;
     padding: 0;
 }
-#ctag{
+
+#ctag {
     background-color: rgb(0, 153, 255);
     border-radius: 7px;
     border-width: 10px;
     padding: 5px;
     max-width: 200px;
-   
+
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 
 }
+
 /* Reviews */
 
-.pfp{
+.pfp {
     max-width: 100px;
     max-height: 100%;
     border-radius: 50%;
-    
+
 }
+
 /* Footer */
 footer {
     border: none;
     position: relative;
     background-color: black;
-    color:white;
+    color: white;
     text-decoration-color: #ffff;
 }
+
 footer h4 {
-    margin:0;
+    margin: 0;
 }
 
-.rtext{
+.rtext {
     margin: 0;
     padding: 0;
 }
@@ -130,47 +146,51 @@ footer h4 {
 @media (min-width: 1000px) {
 
     /* Header & Hero */
-    #imgOne{
+    #imgOne {
         max-width: 100%;
         max-height: auto;
     }
-    
+
     /* Projects */
-   
-    #projects{
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr 1fr;
+
+    #projects {
+        display: grid;
+        grid-gap:10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     #projects img {
-        max-width:80%;
+        max-width:100%;
         padding: 10px;
         border-radius: 7px;
         background-color: rgb(0, 153, 255);
     }
+
     .project {
-        justify-items:stretch;
-        display:grid;
+        justify-items: stretch;
+        display: grid;
+        grid-template-rows:75% 25%;
     }
-    .description{
+
+    .description {
         background-color: rgb(0, 153, 255);
         border-radius: 7px;
-        max-width: 87%;
         margin-top: 5%;
     }
 
     /* Reviews */
-   .review{
-    padding: 10px;
-    background-color: rgb(0, 153, 255);
-    border-radius: 7px;
-    max-width: 500px;
-    max-height: 100%;
+    .review {
+        padding: 10px;
+        background-color: rgb(0, 153, 255);
+        border-radius: 7px;
+        max-width: 500px;
+        max-height: 100%;
 
-    margin: auto;
-    width: 50%;
-    /*past 2 lines from w3 schools https://www.w3schools.com/css/css_align.asp*/
-   }
- 
+        margin: auto;
+        width: 50%;
+        /*past 2 lines from w3 schools https://www.w3schools.com/css/css_align.asp*/
+    }
+
     /* Footer */
 
 }
